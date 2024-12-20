@@ -3,12 +3,12 @@ import express from "express";
 const app = express();
 
 app.get("/", (req, res) => {
-  res.send("Shuvkant Chaudhary Phanait");
+  res.send("Shuvkant ");
 });
 
 app.get("/api/jokes", (req, res) => {
   const jokes = [
-    { id: 1, title: "first jokes", content: "This is first joke" },
+    { id: 1, title: "first jokes", content: "Why don’t skeletons fight each other? They don’t have the guts" },
     { id: 2, title: "second jokes", content: "This is second joke" },
     { id: 3, title: "third joke", content: "This is third joke" },
     { id: 4, title: "fourth joke", content: "this is fourth joke" },
