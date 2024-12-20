@@ -5,7 +5,7 @@ import axios from "axios";
 function App() {
   const [jokes, setJokes] = useState([]);
   useEffect(() => {
-    axios.get("http://localhost:3000/api/jokes").then((response) => {
+    axios.get("https://sffullstack.onrender.com/api/jokes").then((response) => {
       setJokes(response.data);
     }).catch((error) => {
       console.log(error);
