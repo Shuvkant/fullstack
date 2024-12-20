@@ -5,12 +5,12 @@ import axios from "axios";
 function App() {
   const [jokes, setJokes] = useState([]);
   useEffect(() => {
-    axios.get("/api/jokes").then((response) => {
+    axios.get("http://localhost:3000/api/jokes").then((response) => {
       setJokes(response.data);
     }).catch((error) => {
       console.log(error);
     });
-  });
+  }, []); //use an empty dependency array
   return (
     <>
       <h1>Fullstack</h1>
